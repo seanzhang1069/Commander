@@ -2,6 +2,14 @@
 
 All notable changes to Commander will be documented in this file.
 
+## [0.2.2] - 2026-04-28
+
+### Changed
+- Refresh DocC build plugin dependency pins.
+
+### Fixed
+- Normalize the package copyright header.
+
 ## [0.2.1] - 2026-01-18
 
 ### Changed
