@@ -116,6 +116,10 @@ public struct CommandParser {
             }
         }
 
+        if self.signature.arguments.isEmpty, let unexpected = positional.first {
+            throw CommanderError.unexpectedArgument(unexpected)
+        }
+
         return ParsedValues(positional: positional, options: options, flags: flags)
     }
 

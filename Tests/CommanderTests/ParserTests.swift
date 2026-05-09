@@ -42,6 +42,14 @@ func errorsOnUnknownOption() {
 }
 
 @Test
+func errorsOnUnexpectedArgumentWhenCommandHasNoPositionalArguments() {
+    let parser = CommandParser(signature: CommandSignature())
+    #expect(throws: CommanderError.unexpectedArgument("extra")) {
+        _ = try parser.parse(arguments: ["extra"])
+    }
+}
+
+@Test
 func programResolvesCommand() throws {
     let descriptor = CommandDescriptor(name: "demo", abstract: "", discussion: nil, signature: signature)
     let program = Program(descriptors: [descriptor])
