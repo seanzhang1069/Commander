@@ -141,7 +141,7 @@ Every command automatically gets the standard runtime flags `--verbose` / `-v` a
 Need compatibility spellings (like `--json-output` alongside `--json`)? Use the alias helpers so Commander’s help output only shows the canonical names while the parser still accepts every variant:
 
 ```swift
-let jsonFlag = FlagDefinition(
+let jsonFlag = FlagDefinition.make(
     label: "jsonOutput",
     names: [
         .short("j"),
