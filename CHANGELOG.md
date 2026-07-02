@@ -2,7 +2,11 @@
 
 All notable changes to Commander will be documented in this file.
 
-## Unreleased
+## [0.2.3] - 2026-07-02
+
+### Highlights
+- Commands that declare no positional inputs now reject stray arguments instead of accepting malformed invocations.
+- CI once again verifies builds across all advertised Apple simulator platforms.
 
 ### Fixed
 - Reject unexpected positional arguments when a command declares no positional inputs.
