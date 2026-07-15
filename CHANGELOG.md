@@ -2,7 +2,7 @@
 
 All notable changes to Commander will be documented in this file.
 
-## Unreleased
+## [0.2.4] - 2026-07-15
 
 ### Platform/CI
 - Update macOS CI and Apple simulator builds to macOS 26 and Xcode 26.6.
