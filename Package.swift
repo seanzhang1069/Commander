@@ -13,8 +13,9 @@ let package = Package(
     products: [
         .library(name: "Commander", targets: ["Commander"]),
     ],
+      //  修改，
     dependencies: [
-        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.0"),
+        //.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.0"),
     ],
     targets: [
         .target(
